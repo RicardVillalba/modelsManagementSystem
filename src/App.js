@@ -1,11 +1,22 @@
 import "./App.css";
 import NavBar from "./components/navBar";
 import ModelsList from "./components/modelsList";
+import Model from "./components/model";
+import data from "./components/data";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ModelsList />
+      <Router>
+        <NavBar />
+        <Route path="/models">
+          <ModelsList data={data} />
+        </Route>
+        <Route path="/model/:id">
+          <Model data={data} />
+        </Route>
+      </Router>
     </div>
   );
 }
