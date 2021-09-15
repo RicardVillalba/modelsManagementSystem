@@ -21,6 +21,19 @@
   font-family: ABChanelCorpoRegular;
 }
 
+.navBarLogo {
+  width: auto;
+  font-size: 1.4rem;
+}
+
+.navBarSections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  font-size: 0.9rem;
+}
+
 .navLinks {
   display: flex;
   justify-content: space-between;

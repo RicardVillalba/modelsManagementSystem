@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Route path="/models">
+        <Route path="/women">
           <ModelsList data={data} />
         </Route>
         <Route path="/model/:id">
