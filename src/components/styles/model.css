@@ -7,7 +7,6 @@
 
 .modelContainer {
   display: flex;
-
   justify-content: center;
   align-items: center;
   max-width: 100%;
@@ -18,13 +17,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   height: 80vh;
   margin-top: 3vh;
 }
 
 .modelPageMainImage {
-  width: 30%;
+  width: 25%;
   height: 80%;
   margin-left: 7%;
   max-height: 650px;
@@ -49,7 +48,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 83%;
+  height: 82.1%;
   width: 100%;
 }
 .modelpageModelName {
@@ -62,7 +61,7 @@
   margin: 0;
   margin-left: 5%;
   border-bottom: 1px solid black;
-  width: 100%;
+  width: 95%;
 }
 .modelpageModelDescription {
   display: flex;
@@ -70,7 +69,7 @@
   margin-left: 5%;
   text-align: justify;
   text-justify: inter-word;
-  width: 100%;
+  width: 95%;
 }
 
 .modelPageInfoDetailsContainer {
@@ -99,16 +98,20 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
-
   margin-right: 10%;
   width: 100%;
 }
 
 .modelsPageInfoValue {
   display: flex;
-
   margin: 0;
   width: 100%;
   text-align: justify;
   text-justify: none;
+}
+
+@media (min-width: 1300px) {
+  .modelPageMainImage {
+    width: 32%;
+  }
 }

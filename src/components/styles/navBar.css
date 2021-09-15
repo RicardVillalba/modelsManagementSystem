@@ -17,11 +17,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  width: 100%;
+  height: 8vh;
   font-family: ABChanelCorpoRegular;
+  margin-bottom: 0.1%;
 }
 
-.navBarLogo {
+.navBarLogoSection {
   width: auto;
   font-size: 1.4rem;
 }
@@ -33,10 +35,28 @@
   width: 65%;
   font-size: 0.9rem;
 }
+.navBarLogo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1050px;
+}
+
+.navBarLogo,
+.navBarLogo:hover,
+.navBarLogo:focus,
+.navBarLogo:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 .navLinks {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  max-width: 1050px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.navBarLinks:hover {
+  border-bottom: 1px solid black;
 }
