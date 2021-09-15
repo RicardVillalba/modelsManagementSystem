@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "ABChanelCorpoRegular";
+  src: local("ABChanelCorpoRegular"),
+    url(/Users/ricard/Documents/modelsManagementSystem/modelsagencyms-client/src/fonts/ABChanelCorpoRegular.ttf)
+      format("truetype");
+}
+
 .navBarLinks,
 .navBarLinks:hover,
 .navBarLinks:focus,
@@ -8,10 +15,10 @@
 
 .navContainer {
   display: flex;
-
   justify-content: center;
   align-items: center;
   height: 5vh;
+  font-family: ABChanelCorpoRegular;
 }
 
 .navLinks {
