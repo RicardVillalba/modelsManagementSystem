@@ -1,0 +1,48 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modelsListContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.modelsList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  max-width: 1050px;
+  margin-top: 3vh;
+}
+
+.modelsListModelCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 295px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.modelsListModelImage {
+  width: 12em;
+  height: 270px;
+  max-height: 260px;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.modelsListModelCardInfo {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-top: 8px;
+}
