@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "LyyraExtended-Regular";
+  src: local("LyyraExtended-Regular"),
+    url(/Users/ricard/Documents/modelsManagementSystem/modelsagencyms-client/src/fonts/LyyraExtended-Regular.ttf)
+      format("truetype");
+}
+
+.modelContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.modelPageMainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  margin-top: 3vh;
+}
+
+.modelPageMainImage {
+  width: 30%;
+  height: 80%;
+  margin-left: 7%;
+  max-height: 650px;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.modelPageInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40%;
+  height: 80vh;
+  max-height: 80vh;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.modelPageInfoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 83%;
+  width: 100%;
+}
+.modelpageModelName {
+  display: flex;
+  justify-content: flex-start;
+  font-family: LyyraExtended-Regular;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 5%;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.modelpageModelDescription {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
+}
+
+.modelPageInfoDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  width: 100%;
+  height: 40%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.modelPageInfoDetails {
+  display: flex;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 35%;
+}
+
+.modelsPageInfoName {
+  display: flex;
+  font-family: LyyraExtended-Regular;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+
+  margin-right: 10%;
+  width: 100%;
+}
+
+.modelsPageInfoValue {
+  display: flex;
+
+  margin: 0;
+  width: 100%;
+  text-align: justify;
+  text-justify: none;
+}
