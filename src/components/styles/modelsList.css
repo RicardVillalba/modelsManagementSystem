@@ -1,7 +1,7 @@
-a,
-a:hover,
-a:focus,
-a:active {
+.modelsListLinks,
+.modelsListLinks:hover,
+.modelsListLinks:focus,
+.modelsListLinks:active {
   text-decoration: none;
   color: inherit;
 }
