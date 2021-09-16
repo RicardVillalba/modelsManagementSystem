@@ -1,10 +1,13 @@
 import "./styles/management.css";
+import { Link } from "react-router-dom";
 const Management = () => {
   return (
     <div className="addFormContainer">
       <div className="formHearder">
         <h1>add model form</h1>
-        <button className="closeFormButton">close</button>
+        <Link to="/">
+          <button className="closeFormButton">close</button>
+        </Link>
       </div>
 
       <form className="addForm">
