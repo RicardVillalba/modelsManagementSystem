@@ -7,8 +7,10 @@ import ModelsList from "./components/modelsList";
 import Model from "./components/model";
 import data from "./components/data";
 import SplashScreen from "./components/splashscreen";
+import Management from "./components/management";
 function App() {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -34,6 +36,9 @@ function App() {
                     </Route>
                     <Route path="/model/:id">
                       <Model data={data} />
+                    </Route>
+                    <Route path="/management">
+                      <Management data={data} />
                     </Route>
                   </Switch>
                 </AnimatePresence>

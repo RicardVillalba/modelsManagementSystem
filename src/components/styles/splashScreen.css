@@ -5,20 +5,19 @@
       format("truetype");
 }
 
-.splashScreenLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  padding: 0;
-  margin: 0;
-  position: fixed;
+.splashScreenContainer {
   height: 100vh;
   width: 100vw;
+}
+
+.splashScreenLogo {
+  top: 45%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+
   color: black;
   background: white;
   font-family: ABChanelCorpoRegular, Helvetica, sans-serif;
   font-size: 30px;
-  transform: translate(-50%, -50%);
 }

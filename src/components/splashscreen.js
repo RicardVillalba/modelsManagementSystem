@@ -8,15 +8,17 @@ const transition = {
 
 const SplashScreen = () => {
   return (
-    <motion.p
-      className="splashScreenLogo"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={transition}
-    >
-      mma
-    </motion.p>
+    <div className="splashScreenContainer">
+      <motion.p
+        className="splashScreenLogo"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
+        logo
+      </motion.p>
+    </div>
   );
 };
 

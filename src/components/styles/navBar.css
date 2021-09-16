@@ -55,7 +55,6 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1100px;
-  border-bottom: 1px solid black;
 }
 
 .navBarLinks:hover {
