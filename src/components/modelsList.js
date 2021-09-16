@@ -1,4 +1,5 @@
 import "./styles/modelsList.css";
+import { Link } from "react-router-dom";
 
 const ModelsList = (props) => {
   const data = props.data;
@@ -7,14 +8,14 @@ const ModelsList = (props) => {
       <div className="modelsList">
         {data.models.map((model) => (
           <div key={model._id} model={model} className="modelsListModelCard">
-            <a href={`/model/${model._id}`} className="modelsListLinks">
+            <Link to={`/model/${model._id}`} className="modelsListLinks">
               <img
                 src={model.image}
                 alt={model.name}
                 className="modelsListModelImage"
               />
               <h1 className="modelsListModelCardInfo">{model.name}</h1>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
