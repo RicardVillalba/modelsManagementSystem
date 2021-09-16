@@ -1,8 +1,20 @@
+import { motion } from "framer-motion";
 import "./styles/navBar.css";
 import { Link } from "react-router-dom";
+
+const transition = {
+  duration: 2,
+  ease: [0.43, 0.13, 0.23, 0.96],
+};
+
 const NavBar = () => {
   return (
-    <div className="navContainer">
+    <motion.div
+      className="navContainer"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={transition}
+    >
       <div className="allNavContent">
         <div className="navBarLogoSection">
           <Link to="/" className="navBarLogo">
@@ -27,7 +39,7 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
