@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import "./styles/model.css";
+
+const transition = { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] };
+const transitionName = {
+  duration: 1,
+  ease: [0.43, 0.13, 0.23, 0.96],
+  delay: 0.2,
+};
+
 const Model = (props) => {
   function GetId() {
     const { id } = useParams();
@@ -15,7 +24,13 @@ const Model = (props) => {
 
   console.log(model);
   return (
-    <div className="modelContainer">
+    <motion.div
+      className="modelContainer"
+      initial={{ opacity: 0, y: 22 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={transition}
+    >
       <div className="modelPageMainContent">
         <img
           src={`/${model.image}`}
@@ -24,7 +39,14 @@ const Model = (props) => {
         />
         <div className="modelPageInfoContainer">
           <div className="modelPageInfoContent">
-            <p className="modelpageModelName">{model.name}</p>
+            <motion.p
+              className="modelpageModelName"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={transitionName}
+            >
+              {model.name}
+            </motion.p>
             <p className="modelpageModelDescription">{model.description}</p>
             <div className="modelPageInfoDetailsContainer">
               <div className="modelPageInfoDetails">
@@ -59,7 +81,7 @@ const Model = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
