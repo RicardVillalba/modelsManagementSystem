@@ -2,7 +2,7 @@ import "./styles/modelsList.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const ModelsList = (props) => {
   const data = props.data;
@@ -23,7 +23,7 @@ const ModelsList = (props) => {
                 alt={model.name}
                 className="modelsListModelImage"
                 whileHover={{ scaleX: 1.01, scaleY: 1.02 }}
-                transitionHover={transition}
+                transition={transition}
               />
               <h1 className="modelsListModelCardInfo">{model.name}</h1>
             </Link>
