@@ -8,6 +8,7 @@ import Model from "./components/model";
 import data from "./components/data";
 import SplashScreen from "./components/splashscreen";
 import Management from "./components/management";
+import About from "./components/about";
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -33,6 +34,9 @@ function App() {
                   <Switch location={location} key={location.pathname}>
                     <Route path="/women">
                       <ModelsList data={data} />
+                    </Route>
+                    <Route path="/about">
+                      <About />
                     </Route>
                     <Route path="/model/:id">
                       <Model data={data} />

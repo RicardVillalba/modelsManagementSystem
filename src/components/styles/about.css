@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "ABChanelCorpoRegular";
+  src: local("ABChanelCorpoRegular"),
+    url(/Users/ricard/Documents/modelsManagementSystem/modelsagencyms-client/src/fonts/ABChanelCorpoRegular.ttf)
+      format("truetype");
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: ABChanelCorpoRegular;
+}
+
+.aboutTitle {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.aboutText {
+  text-align: left;
+  text-align: justify;
+  width: 60%;
+  font-weight: 200;
+  text-transform: uppercase;
+}
