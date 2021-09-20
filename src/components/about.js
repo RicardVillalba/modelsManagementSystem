@@ -4,14 +4,14 @@ const About = (props) => {
   const data = props.data;
 
   return (
-    <div className="aboutContainer">
+    <>
       {data.aboutSection.map((about) => (
-        <div key={about._id} about={about}>
+        <div className="aboutContainer" key={about._id} about={about}>
           <h1 className="aboutTitle">{about.title}</h1>
           <p className="aboutText">{about.text}</p>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

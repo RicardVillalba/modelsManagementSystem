@@ -165,7 +165,7 @@ const data = {
     {
       _id: "aboutSection",
       title: "about",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At porro cum consequatur explicabo, natus facere dignissimos voluptatibus quis distinctio pariatur consectetur illo, officiis corrupti aliquid quos necessitatibus doloremque nesciunt iste?",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At porro cum consequatur explicabo, natus facere dignissimos voluptatibus quis distinctio pariatur consectetur illo, officiis corrupti aliquid quos necessitatibus doloremque nesciunt iste?Lorem ipsum dolor sit amet, consectetur adipisicing elit. At porro cum consequatur explicabo, natus facere dignissimos voluptatibus quis distinctio pariatur consectetur illo, officiis corrupti aliquid quos necessitatibus doloremque nesciunt iste?Lorem ipsum dolor sit amet, consectetur adipisicing elit. At porro cum consequatur explicabo, natus facere dignissimos voluptatibus",
     },
   ],
 };
