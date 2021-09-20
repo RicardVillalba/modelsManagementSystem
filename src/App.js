@@ -35,7 +35,7 @@ function App() {
                     <Route path="/women">
                       <ModelsList data={data} />
                     </Route>
-                    <Route path="/about">
+                    <Route path="/about" data={data}>
                       <About />
                     </Route>
                     <Route path="/model/:id">

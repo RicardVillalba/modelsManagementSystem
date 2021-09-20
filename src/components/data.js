@@ -161,6 +161,13 @@ const data = {
         "HAVING EARNED HER STRIPES IN THE FASHION WORLD OVER THE LAST DECADE, CATO STAYED AS DOWN TO EARTH AS ONE COULD POSSIBLY BE. HER CAREER OFFICIALLY LAUNCHED WHEN SHE WALKED PRADA AND IT DID NOT SLOW DOWN EVER SINCE. AS OF 2019 SHE IS THE NEW AMBASSADOR FOR DANCE4LIFE.",
     },
   ],
+  aboutSection: [
+    {
+      _id: aboutSection,
+      title: "about",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At porro cum consequatur explicabo, natus facere dignissimos voluptatibus quis distinctio pariatur consectetur illo, officiis corrupti aliquid quos necessitatibus doloremque nesciunt iste?",
+    },
+  ],
 };
 
 export default data;
