@@ -6,6 +6,7 @@ const transition = { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const ModelsList = (props) => {
   const data = props.data;
+  // console.log(data);
   return (
     <motion.div
       className="modelsListContainer"

@@ -32,7 +32,7 @@ const Model = (props) => {
   //   console.log(props.data.models);
   const model = data.models.find((model) => model._id === parseInt(modelId));
 
-  console.log(model);
+  // console.log(model);
   return (
     <motion.div
       className="modelContainer"

@@ -35,8 +35,8 @@ function App() {
                     <Route path="/women">
                       <ModelsList data={data} />
                     </Route>
-                    <Route path="/about" data={data}>
-                      <About />
+                    <Route path="/about">
+                      <About data={data} />
                     </Route>
                     <Route path="/model/:id">
                       <Model data={data} />
